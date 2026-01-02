@@ -197,6 +197,14 @@ export default function Home() {
         )}
       </main>
 
+      <footer className={styles.footer}>
+        <div className={styles.footerContent}>
+          <p className={styles.footerText}>
+            Desarrollado por <strong>STEVEN VILLAMIZAR MENDOZA</strong>
+          </p>
+        </div>
+      </footer>
+
       <CreateEditModal
         isOpen={isModalOpen}
         onClose={() => {

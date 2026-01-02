@@ -4,6 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Gestión de Asistentes IA - Funnelhot',
   description: 'Sistema de gestión de asistentes IA para automatizar interacciones con leads',
+  authors: [{ name: 'STEVEN VILLAMIZAR MENDOZA' }],
 };
 
 export default function RootLayout({

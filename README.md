@@ -2,6 +2,8 @@
 
 Sistema de gestión de asistentes IA para automatizar interacciones con leads. Aplicación web responsive desarrollada con Next.js, TypeScript y persistencia local.
 
+**Desarrollado por:** STEVEN VILLAMIZAR MENDOZA
+
 ##  Características Implementadas
 
 ###  Funcionalidades Principales

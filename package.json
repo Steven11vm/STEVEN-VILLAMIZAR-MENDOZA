@@ -2,6 +2,7 @@
   "name": "ai-assistant-manager",
   "version": "1.0.0",
   "private": true,
+  "author": "STEVEN VILLAMIZAR MENDOZA",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

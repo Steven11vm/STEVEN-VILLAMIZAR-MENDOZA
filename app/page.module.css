@@ -508,3 +508,34 @@
   }
 }
 
+.footer {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-xl) var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(18, 18, 18, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.footerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerText {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+.footerText strong {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.02em;
+}
+
