@@ -1,0 +1,152 @@
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid;
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.alert::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: currentColor;
+}
+
+.entering {
+  animation: slideInRight 0.3s ease-out;
+}
+
+.exiting {
+  animation: slideOutRight 0.3s ease-in;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.success {
+  border-color: var(--color-black);
+  color: var(--color-black);
+}
+
+.success::before {
+  background-color: var(--color-black);
+}
+
+.error {
+  border-color: var(--color-gray-400);
+  color: var(--color-black);
+}
+
+.error::before {
+  background-color: var(--color-gray-700);
+}
+
+.info {
+  border-color: var(--color-gray-300);
+  color: var(--color-black);
+}
+
+.info::before {
+  background-color: var(--color-gray-500);
+}
+
+.iconContainer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+.message {
+  flex: 1;
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-black);
+}
+
+.closeButton {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-gray-500);
+  padding: var(--spacing-xs);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+  margin-top: -2px;
+  margin-right: -4px;
+}
+
+.closeButton:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-black);
+}
+
+.closeButton:active {
+  transform: scale(0.95);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .alert {
+    max-width: calc(100vw - 2rem);
+    padding: var(--spacing-md);
+  }
+
+  .message {
+    font-size: 0.875rem;
+  }
+}
+
